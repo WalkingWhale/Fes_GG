@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="지역 선택"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/lv_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_seoul"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="btnSeoulClicked"
+                android:text="서울" />
+
+            <Button
+                android:id="@+id/btn_Incheon"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="인천" />
+
+            <Button
+                android:id="@+id/btn_Daejeon"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="대전" />
+
+            <Button
+                android:id="@+id/btn_Daegu"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="대구" />
+
+            <Button
+                android:id="@+id/btn_Gwangju"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="광주" />
+
+            <Button
+                android:id="@+id/btn_Ulsan"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="울산" />
+
+            <Button
+                android:id="@+id/btn_Busan"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="부산" />
+
+            <Button
+                android:id="@+id/btn_Gyeonggi"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="경기" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/map_national" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_Gangone"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="강원" />
+
+            <Button
+                android:id="@+id/btn_Chungcheong_North"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="충북" />
+
+            <Button
+                android:id="@+id/btn_Chungcheong_South"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="충남" />
+
+            <Button
+                android:id="@+id/btn_Jeonlla_North"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="전북" />
+
+            <Button
+                android:id="@+id/btn_Jeonlla_Sorth"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="전남" />
+
+            <Button
+                android:id="@+id/btn_Gyeongsang_North"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="경북" />
+
+            <Button
+                android:id="@+id/btn_Gyeongsang_South"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="경남" />
+
+            <Button
+                android:id="@+id/btn_Jeju"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="제주" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_festlist_location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_ing_fest_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 진행중인 축제"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/lv_ing_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_upcoming_fest_loation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="진행 예정인 축제"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/lv_upcoming_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="option">
+        <item>옵션선택</item>
+        <item>추가요청</item>
+        <item>수정요청</item>
+        <item>기타문의</item>
+    </string-array>
+
+</resources>
